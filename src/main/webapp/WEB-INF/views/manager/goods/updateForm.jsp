@@ -25,10 +25,11 @@
 		<tr>
 			<td><textarea rows="10" cols="100" name="content">${content}</textarea></td>
 		</tr>
-		<tr><td>파일 추가</td>
+		<tr><td>파일 추가</td><td>
 		<c:forEach items="goodsImage" var="fileName">
-		<td><input type="checkbox" name="deleteFile"/>${fileName}</td>
+		<input type="checkbox" name="deleteFile"/>${fileName}<br>
 		</c:forEach>
+		</td>
 		</tr>
 	</table>
 </form>
